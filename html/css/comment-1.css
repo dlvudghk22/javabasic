@@ -1,0 +1,94 @@
+
+.navbar li{
+    display: inline-block;
+    margin: 10px;
+}
+
+.navbar li a{
+    font-size: 30px;
+    text-decoration: none;
+    color: crimson;
+}
+
+ul.hey{
+    font-weight: bold;
+    text-align: center;
+}
+
+div.container{
+    width: 800px;
+    /* background-color: gray; */
+    margin: auto;
+    margin-top: 100px;
+}
+
+div.left{
+    width: 80%;
+    float: left;
+}
+
+div.top{
+    width: 100%;
+}
+
+div.top img{
+    width: 40px;
+    float: left;
+}
+
+div.profile{
+    float: left;
+    margin-left: 10px;
+}
+
+div.profile h3{
+    margin: 0px;
+}
+
+div.profile p{
+    margin: 0px;
+}
+
+div.bottom{
+    clear: both;
+    padding-top: 20px;
+}
+
+div.bottom h4{
+    margin: 0px;
+}
+
+div.bottom p{
+    margin: 0px;
+}
+
+div.right{
+    width: 20%;
+    float: left;
+}
+
+div.right img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
