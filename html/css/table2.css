@@ -3,26 +3,48 @@ body{
     margin: 0;
     padding: 0;
     background-color: lightblue;
+    color: rgb(47, 123, 148);
+    font-weight: bold;
 }
 
 h3{
     margin-top: 0;
+    font-size: 24px;
+    color: rgb(4, 45, 78);
 }
 
 div.container{
     width: 100%;
-    background-color: cornflowerblue;
+    max-width: 800px;
+    /* background-color: cornflowerblue; */
     padding: 30px 50px 30px 50px;
     box-sizing: border-box;
-    
+    margin: auto;
 }
 
 table{
     width: 100%;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     box-sizing: border-box;
     padding: 10px 30px 10px 30px;
+    border-collapse: collapse;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+td{
+    border: 2px solid lightblue;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 15px;
+}
+
+td.last{
+    border-bottom: none;
 }
 
 tr{
@@ -37,11 +59,33 @@ td.item{
     text-align: center;
 }
 
+td.img{
+    width: 20%;
+    background-image: url('../image/item1.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 
+div.bottom a{
+    float: left;
+    color: rgb(4, 45, 78);
+}
 
+button{
+    float: right;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
 
-
-
+.clearfix::after{
+    display: block;
+    content: '';
+    clear: both;
+}
 
 
 
