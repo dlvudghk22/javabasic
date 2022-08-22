@@ -5,6 +5,17 @@ body{
     background-color: lightblue;
     color: rgb(47, 123, 148);
     font-weight: bold;
+    /* font-family: 'nanumsquare','dotum', 'arial'; */
+}
+
+@font-face{
+    font-family: '어쩌고폰트';
+    src: url('폰트이름어쩌고.ttf');
+}
+
+@font-face{
+    font-family: '어쩌고굵은폰트';
+    src: url('폰트이름어쩌고.ttf');
 }
 
 h3{
@@ -80,6 +91,21 @@ button{
     border: 1px solid black;
     margin-top: 10px;
 }
+
+button:hover{
+    background-color: white;
+}
+
+button:focus{
+    background-color: blue;
+    color: white;
+}
+
+button:active{
+    background-color: black;
+}
+
+
 
 .clearfix::after{
     display: block;
