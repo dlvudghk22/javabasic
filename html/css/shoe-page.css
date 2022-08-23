@@ -3,10 +3,39 @@ body{
     margin: 0px;
 }
 
+/* nav.nav{
+    display: flex;
+    padding: 20px;
+}
+
+div.logo{
+    flex-grow: 3;
+}
+
+div.products{
+    margin-right: 20px;
+} */
+
+nav{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    padding: 20px;
+}
+
+div.logo{
+    flex-grow: 1;
+}
+
+div.products{
+    margin-right: 20px;
+}
+
+
 div.main-background{
     /* width: 100%; */
     height: 500px;
-    background-image: url('../shoes.jpg');
+    background-image: url('../image/shoes.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -54,7 +83,13 @@ input[type=text]{
 
 
 
+@media screen and (max-width: 1200px) {
+    
+    h4.main-title{
+        font-size: 21px;
+    }
 
+}
 
 
 
