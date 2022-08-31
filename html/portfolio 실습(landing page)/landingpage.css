@@ -1,0 +1,69 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+div.head-wrapper div.inner{
+    margin: auto;
+    width: 80%;
+    height: 900px;
+    background: linear-gradient(rgb(92, 122, 255), rgb(79, 71, 182));
+    padding: 50px 100px 50px 100px;
+}
+
+div.top-wrapper{
+    width: 100%;
+    height: 50%;
+}
+
+div.top-text-wrapper{
+    color: #fff;
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+}
+
+div.bg-img-wrapper{
+    width: 50%;
+    height: 100%;
+    float: right;
+    background-image: url('iphone.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
