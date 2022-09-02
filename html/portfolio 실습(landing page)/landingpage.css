@@ -12,15 +12,16 @@ body{
 
 div.head-wrapper div.inner{
     margin: auto;
-    width: 80%;
-    height: 900px;
+    width: 60%;
+    height: 1000px;
     background: linear-gradient(rgb(92, 122, 255), rgb(79, 71, 182));
-    padding: 50px 100px 50px 100px;
 }
 
 div.top-wrapper{
     width: 100%;
     height: 50%;
+    padding: 50px 100px 0px 100px;
+    box-sizing: border-box;
 }
 
 div.top-text-wrapper{
@@ -37,13 +38,52 @@ div.bg-img-wrapper{
     background-image: url('iphone.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center right;
 }
 
+div.notice{
+    width: 100%;
+    height: 140px;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 30px;
+}
 
+div.notice h4{
+    margin: 0;
+}
 
+div.bot-wrapper{
+    text-align: center;
+    color: #fff;
+}
 
+ul.bot-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
 
+ul.bot-list li{
+    margin: 20px;
+}
+
+div.service-img{
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+}
+
+box-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 
