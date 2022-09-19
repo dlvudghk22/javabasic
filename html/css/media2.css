@@ -1,4 +1,6 @@
 
+
+
 body{
     margin: 0;
     padding: 0;
@@ -27,14 +29,22 @@ div.img{
 
 div.overlay{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
 }
 
-div.overlay-black{
+/* div.overlay-black{
     width: 100%;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 100%;
+    transition: all 0.8s;
+} */
+
+div.overlay-black{
+    width: 200px;
+    height: 200px;
     background-color: rgba(0, 0, 0, 0.3);
     margin-top: 100%;
     transition: all 0.8s;
@@ -47,6 +57,18 @@ img{
 div.overlay:hover div.overlay-black{
     margin-top: 50%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
