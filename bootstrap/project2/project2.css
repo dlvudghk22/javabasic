@@ -7,8 +7,11 @@ p{
     margin-bottom: 10px;
 }
 
+
+
 .face{
     text-align: center;
+    line-height: 164px ;
 }
 
 img{
@@ -32,17 +35,42 @@ img{
 .bi-geo-alt-fill{
     color: cornflowerblue;
     font-style: normal;
+    display: block;
+}
+
+.btn{
+    background-color: cornflowerblue;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
 }
 
 .label{
     font-weight: 600;
 }
 
+.left-border{
+    border-left: solid 2px #ccc;
+}
+
+/* title end */
+
+/* nav */
 
 
+.navbar-brand{
+    color: cornflowerblue;
+    border-bottom: solid 2px cornflowerblue;
+}
 
-
-
+.profile-box>div{
+    height: 300px;
+    background-color: #fff;
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 10px;
+}
 
 
 
