@@ -7,6 +7,11 @@ p{
     margin-bottom: 10px;
 }
 
+div{
+    margin: 0;
+    padding: 0;
+}
+
 
 
 .face{
@@ -22,7 +27,7 @@ img{
     background-color: #fff;
     width: 100%;
     height: 100%;
-    margin-top: 50px;
+    margin: 50px 0px 50px 0px;
     padding: 40px;
     border-radius: 10px;
 }
@@ -62,29 +67,44 @@ img{
 .navbar-brand{
     color: cornflowerblue;
     border-bottom: solid 2px cornflowerblue;
+    float: left;
+}
+
+.profile-box{
+    
+    display: flex;
+    justify-content: space-around;
 }
 
 .profile-box>div{
-    height: 300px;
+    height: fit-content;
     background-color: #fff;
-    margin-top: 50px;
-    padding: 40px;
     border-radius: 10px;
+    margin-top: 20px;
+    padding: 30px;
+    line-height: 30px;
 }
 
+.profile-box>div h3{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
 
+.about-box{
+    padding-bottom: 100px;
+    margin-bottom: 30px;
+    border-bottom: rgb(206, 206, 206) solid 2px;
+}
 
+.skills-box>span{
+    border: #333 solid 1px;
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.skills-box{
+    padding-bottom: 200px;
+}
 
 
 
