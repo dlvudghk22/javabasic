@@ -106,6 +106,70 @@ img{
     padding-bottom: 200px;
 }
 
+.signup{
+    text-align: center;
+}
+
+.signup>i{
+    color: cornflowerblue;
+    font-size: 90px;
+}
+
+.signup>i::before{
+    margin-bottom: 30px;
+}
+
+.signup>a{
+    width: 150px;
+    padding: 10px;
+}
+
+.already{
+    color: cornflowerblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
