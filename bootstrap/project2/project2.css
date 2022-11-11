@@ -3,130 +3,48 @@ body{
     background-color: #f7f9fc;
 }
 
-p{
-    margin-bottom: 10px;
-}
-
-div{
-    margin: 0;
-    padding: 0;
-}
-
-
-
-.face{
-    text-align: center;
-    line-height: 164px ;
-}
-
-img{
-    width: 60%;
-}
-
-.title{
-    background-color: #fff;
-    width: 100%;
-    height: 100%;
-    margin: 50px 0px 50px 0px;
-    padding: 40px;
+.white-box{
     border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
 }
 
-.name{
-    font-size: 27px;
-    font-weight: 600;
+.pill{
+    border: solid 1px #666;
+    border-radius: 30px;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
 }
 
-.bi-geo-alt-fill{
-    color: cornflowerblue;
-    font-style: normal;
-    display: block;
-}
-
-.btn{
-    background-color: cornflowerblue;
-    border: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100px;
-}
-
-.label{
-    font-weight: 600;
-}
-
-.left-border{
-    border-left: solid 2px #ccc;
-}
-
-/* title end */
-
-/* nav */
 
 
-.navbar-brand{
-    color: cornflowerblue;
-    border-bottom: solid 2px cornflowerblue;
-    float: left;
-}
 
-.profile-box{
-    
-    display: flex;
-    justify-content: space-around;
-}
 
-.profile-box>div{
-    height: fit-content;
-    background-color: #fff;
-    border-radius: 10px;
-    margin-top: 20px;
-    padding: 30px;
-    line-height: 30px;
-}
 
-.profile-box>div h3{
-    font-weight: 600;
-    margin-bottom: 20px;
-}
 
-.about-box{
-    padding-bottom: 100px;
-    margin-bottom: 30px;
-    border-bottom: rgb(206, 206, 206) solid 2px;
-}
 
-.skills-box>span{
-    border: #333 solid 1px;
-    border-radius: 20px;
-    padding: 5px 15px 5px 15px;
-}
 
-.skills-box{
-    padding-bottom: 200px;
-}
 
-.signup{
-    text-align: center;
-}
 
-.signup>i{
-    color: cornflowerblue;
-    font-size: 90px;
-}
 
-.signup>i::before{
-    margin-bottom: 30px;
-}
 
-.signup>a{
-    width: 150px;
-    padding: 10px;
-}
 
-.already{
-    color: cornflowerblue;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
