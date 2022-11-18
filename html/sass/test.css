@@ -1,0 +1,30 @@
+.btn-blue, .btn-red, .btn-green {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  display: inline-block;
+}
+
+.btn-green {
+  background-color: greenyellow;
+}
+
+.btn-red {
+  background-color: crimson;
+}
+
+.btn-blue {
+  background-color: cornflowerblue;
+}
+
+body {
+  background-color: #333;
+  font-size: 120px;
+  color: white;
+}
+
+.box {
+  background-color: rgb(30, 158, 180);
+  font-size: 14px;
+  color: white;
+}/*# sourceMappingURL=test.css.map */
