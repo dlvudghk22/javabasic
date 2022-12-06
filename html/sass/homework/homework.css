@@ -1,5 +1,6 @@
-body {
+* {
   margin: 0;
+  padding: 0;
 }
 
 div {
@@ -62,27 +63,32 @@ li:first-child {
 
 .row {
   border: 1px solid #999;
-  margin: 10px;
+  font-size: 0;
+}
+
+.row > div:last-child {
+  border: none;
 }
 
 .col-2, .col-3, .col-4, .col-6 {
-  display: inline-block;
-  box-sizing: border-box;
+  height: 30px;
   border-right: 1px solid #999;
+  font-size: 16px;
+  display: inline-block;
 }
 
 .col-6 {
-  width: 49%;
+  width: 50%;
 }
 
 .col-4 {
-  width: 30%;
+  width: 33.3%;
 }
 
 .col-3 {
-  width: 23%;
+  width: 25%;
 }
 
 .col-2 {
-  width: 16%;
+  width: 16.6%;
 }/*# sourceMappingURL=homework.css.map */

@@ -53,39 +53,39 @@ li:first-child{
 
 .row{
     border: $border;
-    margin: 10px;
+    font-size: 0;
+}
+
+.row>div:last-child{
+    border: none;
 }
 
 %col{
-    display: inline-block;
-    box-sizing: border-box;
+    height: 30px;
     border-right: $border;
+    font-size: 16px;
+    display: inline-block;
 }
 
 .col-6{
     @extend %col;
-    width: 49%;
+    width: 50%;
 }
 
 .col-4{
     @extend %col;
-    width: 30%;
+    width: 33.3%;
 }
 
 .col-3{
     @extend %col;
-    width: 23%;
+    width: 25%;
 }
 
 .col-2{
     @extend %col;
-    width: 16%;
+    width: 16.6%;
 }
-
-
-
-
-
 
 
 
