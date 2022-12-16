@@ -17,10 +17,24 @@ body{
     font-size: 12px;
 }
 
+input[type=file]::-webkit-file-upload-button{
+    background-color: cornflowerblue;
+    border: none;
+}
 
+progress{
+    appearance: none;
+}
 
+progress::-webkit-progress-bar{
+    background: skyblue;
+    border-radius: 10px;
+}
 
-
+progress::-webkit-progress-value{
+    background: cornflowerblue;
+    border-radius: 100%;
+}
 
 
 
