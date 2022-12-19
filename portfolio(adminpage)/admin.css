@@ -1,29 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #333;
+  margin-bottom: 100px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
 .container {
   margin-left: 50px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-row: 1fr 1fr;
 }
-.container > div {
-  border: 1px solid black;
-}
-.container .search-box {
+.top {
   grid-column: 1/3;
   height: 80px;
+  position: relative;
+  box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.1);
 }
-.container .search-box .search-bar {
+.top .search-box {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  border: #666 solid 0.1px;
+  border-radius: 5px;
+}
+.top .search-box .search-txt {
+  width: 200px;
+  height: 30px;
+  padding-left: 10px;
+  box-sizing: border-box;
   float: left;
+  border: none;
+  transition: all 1s;
 }
-.container .search-box .search-bar form.search {
+.top .search-box .search-txt:focus {
+  width: 300px;
+}
+.top .search-box .search-btn {
+  width: 30px;
+  height: 30px;
+  background-color: #333;
   float: left;
+  border: none;
+  cursor: pointer;
 }
-.container .search-box .personal {
-  float: right;
+.top .search-box .search-btn .bx {
+  color: white;
 }
-.container .dashboard {
+.top .personal {
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  transform: translateY(-50%);
+}
+.top .personal > div {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+.top .personal .alert {
+  font-size: 21px;
+}
+.top .personal .mail {
+  font-size: 21px;
+}
+.top .personal .user {
+  display: inline-block;
+}
+
+.dashboard {
   grid-column: 1/3;
   height: 300px;
+  padding: 20px;
 }
-.container .earnings {
-  height: 500px;
+.dashboard .dashboard-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dashboard h3 {
+  font-size: 24px;
+}
+.dashboard .dash-card {
+  height: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  border-left: 5px solid rgb(0, 110, 255);
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);
+}
+.dashboard .dash-card .dash-text {
+  margin: 0;
+  padding-left: 10px;
+  display: inline-block;
+}
+.dashboard .dash-card .dash-text h4 {
+  font-size: 21px;
+}
+.dashboard .dash-card .dash-icon {
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+  font-size: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.earnings-box {
+  margin: 0px 20px 0px 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);
+}
+.earnings-box .earnings-title {
+  border-bottom: 0.1px solid #666;
+  padding-left: 20px;
+}
+.earnings-box .earnings {
+  height: 400px;
+  padding: 20px;
+}
+.earnings-box .earnings #myChart {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.tasks {
+  margin: 0px 20px 0px 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);
+}
+.tasks .tasks-title {
+  border-bottom: 0.1px solid #666;
+  padding-left: 20px;
+}
+.tasks .tasks-list > p {
+  height: 40px;
+  padding-left: 20px;
+  border-bottom: 0.1px solid #666;
+}
+.tasks .tasks-list {
+  position: relative;
+}
+.tasks .tasks-list span {
+  padding: 2px 10px 2px 10px;
+  background-color: rgb(0, 110, 255);
+  color: white;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
 }/*# sourceMappingURL=admin.css.map */

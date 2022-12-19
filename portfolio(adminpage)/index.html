@@ -20,36 +20,136 @@
     </nav> -->
 
     <div class="container">
-        <div class="search-box">
-            <div class="search-bar">
-                <form class="search" action="https://www.google.com/search" method="GET">
-                    <input type="text" name="query" placeholder="search">
-                    <input type="submit" value="" class="button">
-                    <i class='bx bx-search'></i>
+        <div class="top">
+            
+            <div class="search-box">
+                <form action="https://www.google.com/search" method="GET">
+                    <input class="search-txt" type="text" name="query" placeholder="search">
+                    <button class="search-btn" type="submit">
+                        <i class='bx bx-search'></i>
+                    </button>
+                    
                     
                 </form>
-                
-            </div>
+            </div>    
+            
             <div class="personal">
-                <div class="aleart">
-
+                <div class="alert">
+                    <i class='bx bxs-bell'></i>
                 </div>
-                <div class="message">
-
+                <div class="mail">
+                    <i class='bx bxs-envelope' ></i>
                 </div>
-                <div class="user-name">
-
+                <div class="user">
+                    Chaewon
                 </div>
             </div>
         </div>
         <div class="dashboard">
+            <h3>Dashboard</h3>
+            <div class="dashboard-flex">
+                <div class="dash-card">
+                    <div class="dash-text">
+                        <h4 class="dash-title">
+                            Earnings (Monthly)
+                        </h4>
+                        <p>
+                            $400,000
+                        </p>
+                    </div>
+                    <div class="dash-icon">
+                        <i class='bx bxs-calendar-alt'></i>
+                    </div>
+                </div>
+                <div class="dash-card">
+                    <div class="dash-text">
+                        <h4 class="dash-title">
+                            Earnings (Monthly)
+                        </h4>
+                        <p>
+                            $400,000
+                        </p>
+                    </div>
+                    <div class="dash-icon">
+                        <i class='bx bxs-calendar-alt'></i>
+                    </div>
+                </div>
+                <div class="dash-card">
+                    <div class="dash-text">
+                        <h4 class="dash-title">
+                            Earnings (Monthly)
+                        </h4>
+                        <p>
+                            $400,000
+                        </p>
+                    </div>
+                    <div class="dash-icon">
+                        <i class='bx bxs-calendar-alt'></i>
+                    </div>
+                </div>
+                <div class="dash-card">
+                    <div class="dash-text">
+                        <h4 class="dash-title">
+                            Earnings (Monthly)
+                        </h4>
+                        <p>
+                            $400,000
+                        </p>
+                    </div>
+                    <div class="dash-icon">
+                        <i class='bx bxs-calendar-alt'></i>
+                    </div>
+                </div>
+            </div>
             
         </div>
-        <div class="earnings">
-            
+        <div class="earnings-box">
+            <div class="earnings-title">
+                <h4 class="earnings-text">
+                    Earnings Overview
+                </h4>
+            </div>
+            <div class="earnings">
+                <canvas id="myChart"></canvas>
+              </div>
+              
+              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+              
+              <script>
+                    const ctx = document.getElementById('myChart');
+                
+                    new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                        datasets: [{
+                        label: '# of Votes',
+                        data: [9, 19, 3, 5, 2, 3],
+                        borderWidth: 1,
+                        fill: true
+                        }]
+                    },
+                    options: {
+                        scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                        }
+                    }
+                    });
+              </script>
         </div>
         <div class="tasks">
-            
+            <div class="tasks-title">
+                <h4 class="tasks-text">
+                    Tasks
+                </h4>
+            </div>
+            <div class="tasks-list">
+                <p>Borrowed Items <span>14</span> </p>
+                <p>Trellow Requests <span>3</span> </p>
+                <p>Marked Comments <span>8</span> </p>
+            </div>
         </div>
     </div>
 
