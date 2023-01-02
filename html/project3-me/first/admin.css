@@ -1,0 +1,229 @@
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #333;
+  margin-bottom: 100px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.menu {
+  position: fixed;
+  z-index: 9999;
+  width: 70px;
+  height: 100%;
+  background-color: rgb(0, 110, 255);
+  color: white;
+  font-size: 21px;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+.menu i {
+  margin: 0px 20px 0px 10px;
+}
+.menu p {
+  transform: translateX(-200px);
+  display: inline-block;
+}
+
+.menu:hover {
+  width: 180px;
+}
+.menu:hover p {
+  transform: translateX(0px);
+}
+
+.container {
+  margin-left: 60px;
+  display: grid;
+}
+.top {
+  grid-column: 1/3;
+  height: 80px;
+  position: relative;
+  box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.top .search-box {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  border: #666 solid 0.1px;
+  border-radius: 5px;
+}
+.top .search-box .search-txt {
+  width: 200px;
+  height: 30px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  float: left;
+  border: none;
+  transition: all 1s;
+}
+.top .search-box .search-txt:focus {
+  width: 300px;
+}
+.top .search-box .search-btn {
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  float: left;
+  border: none;
+  cursor: pointer;
+}
+.top .search-box .search-btn .bx {
+  color: white;
+}
+.top .personal {
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  transform: translateY(-50%);
+}
+.top .personal > div {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+.top .personal .alert {
+  font-size: 21px;
+}
+.top .personal .mail {
+  font-size: 21px;
+}
+.top .personal .user {
+  display: inline-block;
+}
+.top .mobile-btn {
+  display: none;
+}
+
+.dashboard {
+  grid-column: 1/3;
+  height: 300px;
+  padding: 20px;
+}
+.dashboard .dashboard-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dashboard h3 {
+  font-size: 24px;
+}
+.dashboard .dash-card {
+  height: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  border-left: 5px solid rgb(0, 110, 255);
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);
+}
+.dashboard .dash-card .dash-text {
+  margin: 0;
+  padding-left: 10px;
+  display: inline-block;
+}
+.dashboard .dash-card .dash-text h4 {
+  font-size: 21px;
+}
+.dashboard .dash-card .dash-icon {
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+  font-size: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.earnings-box {
+  margin: 0px 20px 0px 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);
+}
+.earnings-box .earnings-title {
+  border-bottom: 0.1px solid #666;
+  padding-left: 20px;
+}
+.earnings-box .earnings {
+  height: 400px;
+  padding: 20px;
+}
+.earnings-box .earnings #myChart {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.tasks {
+  margin: 0px 20px 0px 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);
+}
+.tasks .tasks-title {
+  border-bottom: 0.1px solid #666;
+  padding-left: 20px;
+}
+.tasks .tasks-list > p {
+  height: 40px;
+  padding-left: 20px;
+  border-bottom: 0.1px solid #666;
+}
+.tasks .tasks-list {
+  position: relative;
+}
+.tasks .tasks-list span {
+  padding: 2px 10px 2px 10px;
+  background-color: rgb(0, 110, 255);
+  color: white;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+}
+
+@media (max-width: 515px) {
+  .top .search-box, .top .personal {
+    display: none;
+  }
+  .top .mobile-btn {
+    display: inline-block;
+    float: right;
+    font-size: 42px;
+    line-height: 80px;
+  }
+  .dashboard {
+    grid-column: 1/3;
+    height: 100%;
+    padding: 20px;
+  }
+  .dashboard .dashboard-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .dashboard .dash-card {
+    margin-bottom: 20px;
+  }
+  .dashboard .dash-card .dash-text {
+    padding-left: 0;
+  }
+  .dashboard .dash-card .dash-text h4 {
+    font-size: 16px;
+  }
+  .dashboard .dash-card .dash-icon {
+    font-size: 21px;
+    transform: none;
+  }
+  .earnings-box {
+    grid-column: 1/3;
+    margin-bottom: 20px;
+  }
+  .tasks {
+    grid-column: 1/3;
+  }
+}/*# sourceMappingURL=admin.css.map */
