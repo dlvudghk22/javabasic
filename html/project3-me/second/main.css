@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* v2.0 | 20110126
   http://meyerweb.com/eric/tools/css/reset/ 
   License: none (public domain)
@@ -20,7 +19,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit; /*부모 값 상속*/
   vertical-align: baseline;
 }
 
@@ -153,4 +151,39 @@ input {
   position: absolute;
   top: 2px;
   right: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard {
+  max-width: 1300px;
+  margin: 30px auto;
+}
+.dashboard h3 {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.card {
+  border: 1px solid #999;
+  border-left: 3px solid crimson;
+  border-radius: 10px;
+  height: 100px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card .card-inner h4 {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.card i {
+  font-size: 26px;
+  margin-top: 15px;
 }/*# sourceMappingURL=main.css.map */
