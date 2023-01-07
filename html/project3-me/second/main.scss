@@ -152,7 +152,26 @@ $black:rgb(54, 54, 54);
 }
 
 
+.bottom{
+    display: flex;
+    padding: 20px 10px 20px 10px;
+}
 
+.chart-box{
+    width: 60%;
+}
+
+.chart-title{
+    width: 100%;
+    height: 40px;
+    background-color: #eee;
+    margin: 10px;
+}
+
+.chart{
+    width: 100%;
+    
+}
 
 
 
