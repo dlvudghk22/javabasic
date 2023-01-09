@@ -199,6 +199,41 @@ $black:rgb(54, 54, 54);
     border: none;
 }
 
+@media screen and (max-width:992px){
+
+    .dashboard{
+        margin-bottom: 0;
+    }
+
+    .card{
+        margin-bottom: 30px;
+    }
+
+    .chart-box, .list-box{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .bottom{
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media screen and (max-width:600px){
+
+    
+
+}
+
+
+
+
+
+
+
+
 
 
 
