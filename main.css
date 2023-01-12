@@ -43,9 +43,19 @@
     margin: 20px;
 }
 
+.login{
+    margin: 20px;
+}
 
+.id-box{
+    padding: 20px;
+    background-color: forestgreen;
+    border-radius: 10px;
+}
 
-
+.id-btn, .pw-btn{
+    margin-top: 10px;
+}
 
 
 

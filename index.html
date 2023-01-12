@@ -20,7 +20,7 @@
 
      <div class="alert-box" id="red">
         red
-        <button class="close" onclick="document.getElementById('red').style.display='none' ">X</button>
+        <button class="close" onclick="alert('none')">X</button>
      </div>
 
      <div class="alert-box" id="gold">
@@ -33,9 +33,49 @@
         <button class="close">X</button>
      </div>
 
-     <button class="add" onclick="document.getElementById('red').style.display='block' ">
+     <button class="add" onclick="alert('block')">
         add
      </button>
+
+     <div class="login">
+         <div class="id-box">
+            <p id="text">
+
+            </p>
+            <input type="text">
+         </div>
+         <button class="id-btn" onclick="button('아이디를 입력하세요')">
+            id
+         </button>
+         <button class="pw-btn" onclick="button('비밀번호를 입력하세요')">
+            pw
+         </button>
+         <button class="login-close" onclick="close('none')">
+            close
+         </button>
+     </div>
+     
+
+
+
+
+     <script>
+
+      function alert(display){
+         document.getElementById('red').style.display=display;
+      }
+
+      function button(placeholder){
+         document.getElementById('text').innerHTML=placeholder;
+      }
+
+      function close(display){
+         document.getElementById('text').style.display=display;
+      }
+
+
+
+     </script>
 
     
 </body>
