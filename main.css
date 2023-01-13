@@ -47,10 +47,11 @@
     margin: 20px;
 }
 
-.id-box{
+#id-box{
     padding: 20px;
     background-color: forestgreen;
     border-radius: 10px;
+    display: none;
 }
 
 .id-btn, .pw-btn{

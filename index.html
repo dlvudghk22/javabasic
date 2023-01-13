@@ -18,7 +18,7 @@
 
      -->
 
-     <div class="alert-box" id="red">
+     <!-- <div class="alert-box" id="red">
         red
         <button class="close" onclick="alert('none')">X</button>
      </div>
@@ -35,23 +35,24 @@
 
      <button class="add" onclick="alert('block')">
         add
-     </button>
+     </button> -->
+
+
+     
 
      <div class="login">
-         <div class="id-box">
+         <div id="id-box">
             <p id="text">
 
             </p>
             <input type="text">
+            <button onclick="close()">close</button>
          </div>
-         <button class="id-btn" onclick="button('아이디를 입력하세요')">
+         <button class="id-btn" onclick="button('block','아이디를 입력하세요')">
             id
          </button>
-         <button class="pw-btn" onclick="button('비밀번호를 입력하세요')">
+         <button class="pw-btn" onclick="button('block','비밀번호를 입력하세요')">
             pw
-         </button>
-         <button class="login-close" onclick="close('none')">
-            close
          </button>
      </div>
      
@@ -61,17 +62,16 @@
 
      <script>
 
-      function alert(display){
-         document.getElementById('red').style.display=display;
-      }
-
-      function button(placeholder){
+      function button(display, placeholder){
+         document.getElementById('id-box').style.display=display;
          document.getElementById('text').innerHTML=placeholder;
       }
 
-      function close(display){
-         document.getElementById('text').style.display=display;
+      function close(){
+         document.getElementById('id-box').style.display='none';
       }
+
+
 
 
 
