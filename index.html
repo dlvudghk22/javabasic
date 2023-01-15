@@ -9,48 +9,40 @@
 </head>
 <body>
 
-   <!-- <div id="alertBox">
-      <p id="alert">
-         
-      </p>
+   <div id="alertBox">
+      <p id="alertText"></p>
       <button id="close">close</button>
    </div>
 
-   <button id="idBtn" onclick="open('block','write the id')">id</button>
-   <button id="pwBtn" onclick="open('block','write the pw')">pw</button>
+   <button id="id">id</button>
+   <button id="pw">pw</button>
 
    <script>
 
-      function open(display, alert){
-         document.getElementById('alertBox').style.display=display;
-         document.getElementById('alert').innerHTML=alert;
-      }
+
+      document.getElementById('id').addEventListener('click', function(){
+         document.getElementById('alertBox').style.display='block';
+         document.getElementById('alertText').innerHTML='write your id';
+      })
+
+      document.getElementById('pw').addEventListener('click', function(){
+         document.getElementById('alertBox').style.display='block';
+         document.getElementById('alertText').innerHTML='write your pw';
+      })
+
+      document.getElementById('close').addEventListener('click', function(){
+         document.getElementById('alertBox').style.display='none';
+      })
 
 
 
 
-   </script> -->
 
-   <div class="alert-box" id="alert">
-      <p id="title"> 알림창임 </p>
-      <button>닫기</button>
-    </div>
-    
-    <button onclick="아이디알림창()">버튼1</button>
-    <button onclick="비번알림창()">버튼2</button>
-    
-    <script>
-      function 아이디알림창(){ 
-        document.getElementById('title').innerHTML = '아이디입력하셈'; 
-        document.getElementById('alert').style.display = 'block'; 
-      }
-    
-      function 비번알림창(){ 
-        document.getElementById('title').innerHTML = '비번입력하셈'; 
-        document.getElementById('alert').style.display = 'block'; 
-      }
-    </script>
 
+
+
+
+   </script>
     
 </body>
 </html>
