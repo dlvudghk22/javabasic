@@ -1,0 +1,100 @@
+
+@use 'reset';
+
+%active{
+    background-color: rgb(0, 89, 255);
+    color: white;
+}
+
+$border: 1px solid #999;
+
+ul{
+    margin: 30px;
+}
+
+li{
+    border-bottom: $border;
+    border-left: $border;
+    border-right: $border;
+    padding: 10px;
+}
+
+li:first-child{
+    border-top: $border;
+    @extend %active;
+}
+
+%alert{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    span{
+        font-weight: bold
+    }
+}
+
+.alert-green{
+    @extend %alert;
+    background-color: rgba($color: #42da07, $alpha: 0.3);
+    color: green
+}
+
+.alert-blue{
+    @extend %alert;
+    background-color: rgba($color: #0786da, $alpha: 0.3);
+    color: rgb(45, 45, 204)
+}
+
+.alert-red{
+    @extend %alert;
+    background-color: rgba($color: #ff0000, $alpha: 0.3);
+    color: rgb(190, 29, 29);
+}
+
+.row{
+    border: $border;
+    font-size: 0;
+}
+
+.row>div:last-child{
+    border: none;
+}
+
+%col{
+    height: 30px;
+    border-right: $border;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.col-6{
+    @extend %col;
+    width: 50%;
+}
+
+.col-4{
+    @extend %col;
+    width: 33.3%;
+}
+
+.col-3{
+    @extend %col;
+    width: 25%;
+}
+
+.col-2{
+    @extend %col;
+    width: 16.6%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

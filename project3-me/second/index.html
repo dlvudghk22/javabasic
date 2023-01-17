@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+
+    <title>Project3</title>
+</head>
+<body>
+
+<!-- left sidebar -->
+
+    <div class="sidebar">
+        <div>
+            <i class='bx bx-home'></i>
+            <span>Home</span>
+        </div>
+        <div>
+            <i class='bx bx-message-square-dots'></i>
+            <span>Message</span>
+        </div>
+    </div>
+
+
+<!-- left sidebar end -->
+
+<!-- right content -->
+
+
+<div class="content">
+
+    <!-- nav -->
+    <nav>
+        <div class="nav-box">
+            <div class="navbar">
+                <form action="https://www.google.com/search" method="get">
+                    <input class="search" type="text" name="query" placeholder="search">
+                        <button class="search-btn" type="submit">
+                            <i class='bx bx-search'></i>
+                        </button>
+                </form>
+                <ul class="user">
+                    <li>
+                        <a href="#">
+                            <span>8</span>
+                            <i class='bx bx-bell' ></i>
+                        </a>
+                    </li>
+                    <li class="mail">
+                        <a href="#">
+                            <span>1</span>
+                            <i class='bx bxs-envelope' ></i>
+                        </a>
+                    </li>
+                    <li class="name">
+                        <a href="#">
+                            Chaewon
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- nav end -->
+
+    <!-- dashboard -->
+
+    <div class="container dashboard">
+        <h3>Dashboard</h3>
+        <div class="row">
+            <div class="col-lg-3">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p>Earnings (Monthly)</p>
+                        <h4>$400,000</h4>
+                    </div>
+                    <i class='bx bxs-color'></i>
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p>Earnings (Monthly)</p>
+                        <h4>$400,000</h4>
+                    </div>
+                    <i class='bx bxs-color'></i>
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p>Earnings (Monthly)</p>
+                        <h4>$400,000</h4>
+                    </div>
+                    <i class='bx bxs-color'></i>
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p>Earnings (Monthly)</p>
+                        <h4>$400,000</h4>
+                    </div>
+                    <i class='bx bxs-color'></i>
+                </div>
+
+            </div>
+            
+            
+        </div>
+
+    </div>
+
+    <!-- dashboard end -->
+
+
+    <div class="container">
+        <div class="bottom">
+            <div class="chart-box">
+                <div class="chart-title">
+                    <h4>Earning Overview</h4>
+                </div>
+                <div class="chart">
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                    
+                    <script>
+                        const ctx = document.getElementById('myChart');
+                    
+                        new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                            datasets: [{
+                            label: '# of Votes',
+                            data: [12, 19, 3, 5, 2, 3],
+                            borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                            }
+                        }
+                        });
+                        
+                    </script>
+                    
+                </div>
+            </div>
+            
+            <div class="list-box">
+                <div class="list-title">
+                    <h4>Tasks</h4>
+                </div>
+                
+                <ul class="list">
+                    <li>Yunjin</li>
+                    <li>Sakura</li>
+                    <li>Kazuha</li>
+                    <li>eunchae</li>
+                </ul>
+            </div>
+        </div>  
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+
+// @mixin font($구멍, $구멍2){
+//     font-size: $구멍;
+//     #{ $구멍2 }: -1px;
+// }
+
+
+// h2{
+//     @include font(40px, margin)
+// }
+
+// h3{
+//     @include font(30px, letter-spacing)
+// }
+
+// h4{
+//     @include font(20px, padding)
+// }
+
+@use 'reset';
+
+
+
+
+@mixin font($구멍){
+    font-size: $구멍;
+}
+
+
+h2{
+    @include font(40px);
+    color: reset.$main-color;
+}
+
+h3{
+    @include font(30px);
+}
+
+h4{
+    @include font(20px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,156 @@
+
+@use 'reset';
+
+$border: 1px solid #eee;
+
+    .list{
+
+        margin: 10px;
+
+        li{
+            list-style: none;
+            border: $border;
+            padding: 10px;
+            &:hover{
+                background-color: dodgerblue;
+                color: white;
+                transition: all 0.3s;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    // .active{
+    //     background-color: dodgerblue;
+    //     color: white;
+    // }
+
+    %alert{
+        margin: 10px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .alert-green{
+        @extend %alert;
+        background-color: chartreuse;
+    }
+    
+    .alert-yellow{
+        @extend %alert;
+        background-color: gold;
+    }
+
+    .alert-red{
+        @extend %alert;
+        background-color: crimson;
+    }
+
+    @mixin col($width) {
+        border: $border;
+        background-color: cornflowerblue;
+        float: left;
+        height: 30px;
+        width: $width;
+    }
+
+    %col-md{
+        background-color: darkcyan;
+        color: white;
+        border: $border;
+    }
+
+    .row{
+
+        border: $border;
+
+        .col-6{
+            @include col(50%);
+        }
+
+        .col-4{
+            @include col(33.33%);
+        }
+
+        .col-3{
+            @include col(25%);
+        }
+
+        .col-2{
+            @include col(16.66%);
+        }
+
+        .col-1{
+            @include col(8.33%);
+        }
+
+        .col-md-6{
+            @extend %col-md;
+        }
+
+        .col-md-4{
+            @extend %col-md;
+        }
+
+        .col-md-3{
+            @extend %col-md;
+        }
+
+        .col-md-2{
+            @extend %col-md;
+        }
+
+        .col-md-1{
+            @extend %col-md;
+        }
+
+
+    }
+
+
+    @media (max-width: 600px){
+        .col-md-6{
+            @include col(50%);
+        }
+
+        .col-md-4{
+            @include col(33.33%);
+        }
+
+        .col-md-3{
+            @include col(25%);
+        }
+
+        .col-md-2{
+            @include col(16.66%);
+        }
+
+        .col-md-1{
+            @include col(8.33%);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

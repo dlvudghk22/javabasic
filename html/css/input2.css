@@ -1,0 +1,132 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 80%);
+}
+
+div.form-box{
+    background-color: white;
+    padding: 40px;
+    width: 60%;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clearfix::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+h3{
+    font-size: 31px;
+    margin: 0;
+}
+
+h4{
+    /* font-size: 14px; */
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+div.email input{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+div.name{
+    width: 100%;
+}
+
+div.name input{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+div.first-name{
+    float: left;
+    width: 45%;
+}
+
+div.last-name{
+    float: right;
+    width: 45%;
+}
+
+div.message{
+    width: 100%;
+}
+
+div.message input{
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+div.subscribe{
+    margin-top: 30px;
+    width: 100%;
+    height: 35px;
+}
+
+div.checkbox{
+    float: left;
+    line-height: 35px;
+}
+
+div.checkbox input{
+    cursor: pointer;
+}
+
+div.checkbox label{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+input.send{
+    width: 120px;
+    height: 35px;
+    float: right;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(255, 174, 0);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
