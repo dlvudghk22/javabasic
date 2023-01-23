@@ -19,6 +19,11 @@ body{
     background: white;
     border-radius: 5px;
     padding: 30px;
+    display: none;
+}
+
+.show{
+    display: block;
 }
 
 
