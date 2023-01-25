@@ -26,15 +26,18 @@
 
     <script>
 
-        document.querySelectorAll('.btn')[0].addEventListener('click', function(){
-
-            document.querySelectorAll('.white-bg')[0].classList.toggle('.show')
-
-        })
 
         document.querySelectorAll('.btn-show')[0].addEventListener('click', function(){
-            document.querySelectorAll('.white-bg')[0].classList.toggle('.show')
+            document.querySelectorAll('.white-bg')[0].style.display='block';
         })
+
+        document.querySelectorAll('.btn')[0].addEventListener('click', function(){
+
+            document.querySelectorAll('.white-bg')[0].style.display='none';
+
+        })
+
+        
 
 
     </script>
