@@ -108,7 +108,9 @@
             const numSt = num.toString();
             const lastNum = numSt.charAt(numSt.length-1);
 
-            if(lastNum == 3 || lastNum == 6 || lastNum == 9){
+            if(num>100 || num<0){
+                console.log('hey do not play around');
+            } else if(lastNum == 3 || lastNum == 6 || lastNum == 9){
                 console.log('clap');
             } else{
                 console.log('pass');
@@ -116,6 +118,8 @@
 
         }
 
+        tsn2(-3);
+        tsn2(101);
         tsn2(33);
         tsn2(14);
         tsn2(9);
