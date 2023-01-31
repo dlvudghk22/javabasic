@@ -27,29 +27,61 @@
 
 
 
-        // function bank(money){
+        function bank(money){
 
-        //     if(money<50000){
-        //         const m = money+money*0.15;
-        //         console.log(m+m*0.15);
+            if(money<50000){
+                const m = money+money*0.15;
+                console.log(m+m*0.15);
 
-        //     } else if(money>50000){
-        //         const m = money+money*0.2;
-        //         console.log(m+m*0.2);
-        //     }
-
-        // }
-
-        function bank(m){
-            if(m<50000){
-                console.log(m * 1.15 * 1.15);
-            } else if(m>50000){
-                console.log(m * 1.2 * 1.2);
+            } else if(money>50000){
+                const m = money+money*0.2;
+                console.log(m+m*0.2);
             }
+
         }
+
+        // function bank(m){
+        //     if(m<50000){
+        //         console.log(m * 1.15 * 1.15);
+        //     } else if(m>50000){
+        //         console.log(m * 1.2 * 1.2);
+        //     }
+        // }
 
         bank(60000);
         bank(10000);
+
+
+
+        function cafe(first){
+
+            const second = (first/3)*2;
+            const third = (second/3)*2;
+
+            console.log(first+second+third);
+
+
+        }    
+
+        cafe(360);
+
+
+
+        function cafe2(coffee){
+
+            const refill = 2/3
+
+            console.log(coffee/(1-refill));
+
+        }
+
+        cafe2(360);
+
+
+
+        // console.log(1.2**10); // 1.2를 10번 곱하기
+
+
             
 
     </script>

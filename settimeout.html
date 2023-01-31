@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+
+    <title>SetTimeout</title>
+</head>
+<body>
+
+    <div class="alert alert-danger">
+        <span id="num">5</span>초 이내 구매시 사은품 증정
+    </div>
+
+    <script>
+
+        // 1초가 줄어들 때마다 span 숫자도 1씩 줄어든다
+        // 0이 되면 div는 사라진다
+
+
+        let count = 5;
+
+        setInterval(function(){
+
+            count -=1;
+            if(count >= 1){
+                document.getElementById('num').innerHTML = count;
+            } else if(count < 1){
+                $('.alert').hide();
+            }
+            
+
+        }, 1000);
+
+    </script>
+    
+</body>
+</html>
