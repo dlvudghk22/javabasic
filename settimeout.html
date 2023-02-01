@@ -16,7 +16,7 @@
 <body>
 
     <div class="alert alert-danger">
-        <span id="num">5</span>초 이내 구매시 사은품 증정
+        <span id="num">10</span>초 이내 구매시 사은품 증정
     </div>
 
     <script>
@@ -25,19 +25,19 @@
         // 0이 되면 div는 사라진다
 
 
-        let count = 5;
+        const count = 10;
 
         setInterval(function(){
 
-            count -=1;
-            if(count >= 1){
-                document.getElementById('num').innerHTML = count;
-            } else if(count < 1){
+            count-=1;
+            if(count>=1){
+                document.getElementById('num').innerHTML=count;
+            } else if(count<1){
                 $('.alert').hide();
             }
-            
 
-        }, 1000);
+        }, 1000)
+
 
     </script>
     

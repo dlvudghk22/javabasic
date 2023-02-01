@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+
+    <title>Slide box</title>
+</head>
+
+<style>
+
+    .slide-box{
+        overflow: hidden;
+    }
+
+    .container-slide{
+        width: 300vw;
+    }
+
+    .box{
+        width: 100vw;
+        float: left;
+        transition: all 1s;
+        
+    }
+
+    .box img{
+        width: 100%;
+    }
+
+
+
+</style>
+
+<body>
+
+    <div class="slide-box">
+        <div class="container-slide">
+            <div class="box">
+                <img src="images/car1.png">
+            </div>
+            <div class="box">
+                <img src="images/car2.png">
+            </div>
+            <div class="box">
+                <img src="images/car3.png">
+            </div>
+
+            <button class="pre">pre</button>
+            <button class="btn1">1</button>
+            <button class="btn2">2</button>
+            <button class="btn3">3</button>
+            <button class="next">next</button>
+        </div>
+    </div>
+
+    <script>
+
+        $('.btn1').on('click', function(){
+
+            $('.box').css('transform', 'translateX(0vw)');
+
+        })
+
+        $('.btn2').on('click', function(){
+
+            $('.box').css('transform', 'translateX(-100vw)');
+
+        })
+
+        $('.btn3').on('click', function(){
+
+            $('.box').css('transform', 'translateX(-200vw)');
+
+        })
+
+        $('.pre').on('click', function(){
+
+            $('.box').css('transform', 'translateX(-100vw)');
+
+        })
+
+
+        $('.next').on('click', function(){
+
+            $('.box').css('transform', 'translateX(100vw)');
+
+        })        
+
+    </script>
+    
+    
+</body>
+</html>

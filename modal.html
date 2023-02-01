@@ -53,20 +53,52 @@
         })
 
         $('form').on('submit', function(e){
+            
+            const email = document.getElementById('email').value;
+            const pw = document.getElementById('pw').value;
 
-            if(document.getElementById('email').value == ''){
+            if(email == '' || (/\S+@\S+\.\S+/).test(email) == false){
                 e.preventDefault();
                 alert('write your id');
-            } else if(document.getElementById('pw').value == ''){
+            } else if(pw == ''){
                 e.preventDefault();
                 alert('write your pw');
-            } else if(document.getElementById('pw').value.length < 6){
+            } else if(pw.length < 6){
                 e.preventDefault();
                 alert('write in down in more 6 letters');
+            } else if((/[A-Z]/).test(pw) == false){
+                e.preventDefault();
+                alert('Must contain at least one uppercase letter')
             }
 
 
         })
+
+
+        // '문자'.includes('찾을글자')
+        // 하지만 어떤 글자로 시작하는지, 한글인지 영어인지, 등
+        // 자세한 것은 판별할 수 없음
+
+        // 정규표현식 (regular expression)
+        // /글자/.test('점검할문자') => 글자가 하나라도 들어가 있으면 true
+        
+        // /[a-z]/.test('test') => [] 기호를 이용해서 범위 지정 가능
+        // /[a-z]/ 는 a부터 z
+        // /[a-zA-Z]/는 모든 영어
+        // /[ㄱ-ㅎ가-힣ㅏ-ㅣ]/는 모든 한글
+
+        // /\S/는 특수문자 포함 아무 글자 하나
+        // 백슬래시는 원화 문자키
+
+        // /^a/ => a로 시작하는지
+        // /d$/ => d로 끝나는지
+
+        // /(e/f)/ => e나 f 중 하나라도 들어있는지
+
+        // /a+/ => a가 반복되는 것을 찾기 ex) aaa
+
+        // /\S+t/ => 아무 문자 여러개 다음 t ex) ddddt, eeet, aat
+
 
         
 
