@@ -22,12 +22,12 @@
 
     .container-slide{
         width: 300vw;
+        transition: all 1s;
     }
 
     .box{
         width: 100vw;
         float: left;
-        transition: all 1s;
         
     }
 
@@ -53,46 +53,89 @@
                 <img src="images/car3.png">
             </div>
 
-            <button class="pre">pre</button>
-            <button class="btn1">1</button>
-            <button class="btn2">2</button>
-            <button class="btn3">3</button>
-            <button class="next">next</button>
         </div>
     </div>
+    
+    <button class="prev">prev</button>
+    <button class="btn1">1</button>
+    <button class="btn2">2</button>
+    <button class="btn3">3</button>
+    <button class="next">next</button>
 
     <script>
 
         $('.btn1').on('click', function(){
 
-            $('.box').css('transform', 'translateX(0vw)');
+            $('.container-slide').css('transform', 'translateX(0vw)');
 
         })
 
         $('.btn2').on('click', function(){
 
-            $('.box').css('transform', 'translateX(-100vw)');
+            $('.container-slide').css('transform', 'translateX(-100vw)');
 
         })
 
         $('.btn3').on('click', function(){
 
-            $('.box').css('transform', 'translateX(-200vw)');
+            $('.container-slide').css('transform', 'translateX(-200vw)');
 
         })
 
-        $('.pre').on('click', function(){
 
-            $('.box').css('transform', 'translateX(-100vw)');
 
-        })
+            let curr = 1;
 
 
         $('.next').on('click', function(){
 
-            $('.box').css('transform', 'translateX(100vw)');
+            
+            $('.container-slide').css('transform', 'translateX(-'+curr+'00vw)');
+            curr+=1;
 
-        })        
+        })
+        
+
+
+        // $('.prev').on('click', function(){
+            
+            
+        //     $('.container-slide').css('transform', 'translateX(+'+curr+'00vw)');
+        //     curr-=1;
+        //     3번에 있으면 2번으로
+        //     2번에 있으면 1번으로
+            
+
+        // })
+
+
+        // $('.next').on('click', function(){
+
+        //     curr+=1;
+        //     if(curr == 1){
+        //         $('.box').css('transform', 'translateX(0vw)');
+        //     } else if(curr ==2){
+        //         $('.box').css('transform', 'translateX(-100vw)');
+        //     } else if(curr ==3){
+        //         $('.box').css('transform', 'translateX(-200vw)');
+        //     } 
+
+        // })
+
+        // $('.prev').on('click', function(){
+
+        //     curr-=1;
+        //     if(curr == 3){
+        //         $('.box').css('transform', 'translateX(-200vw)');
+        //     } else if(curr ==2){
+        //         $('.box').css('transform', 'translateX(-100vw)');
+        //     } else if(curr ==1){
+        //         $('.box').css('transform', 'translateX(0vw)');
+        //     } 
+
+        // })
+
+             
 
     </script>
     
