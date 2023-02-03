@@ -24,6 +24,7 @@
 
     ul, li{
         list-style: none;
+        padding: 0;
     }
 
     .slide-box{
@@ -35,7 +36,9 @@
 
     .slide-list{
         width: 2500px;
+        height: 100%;
         transition: all 1s;
+        /* transform: translateX(-500px); */
     }
 
     .slide-list li{
@@ -58,7 +61,7 @@
 
 <body>
 
-    <div class="container">
+    <div class="slide-container">
         <div class="slide-box">
             <ul class="slide-list">
                 <li class="slide">
@@ -87,7 +90,41 @@
 
     <script>
 
-        
+
+        // 사진이 1면 -500*1 5 00
+        // 사진이 2면 -500*2 10 00
+        // 사진이 3면 -500*3 15 00
+
+
+        // 사진이 5면 -500*3 -15 00
+        // 사진이 4면 -500*2 -10 00
+        // 사진이 3면 -500*1 -5 00
+        // 사진이 2면 0
+        // 사진이 1면 
+
+        let curr = 1;
+        let photo = 5;
+
+        $('.next').on('click', function(){
+
+            if(curr<photo){
+                $('.slide-list').css('transform', 'translateX(-'+curr*5+'00px)');
+                curr+=1;
+            } 
+            
+
+        })
+
+
+        $('.prev').on('click', function(){
+            
+
+            if(curr>1){
+                $('.slide-list').css('transform', 'translateX(-'+((curr-2)*5)+'00px)');
+                curr-=1;
+            }
+
+        })
 
     </script>
 

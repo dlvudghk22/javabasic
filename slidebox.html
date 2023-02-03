@@ -85,55 +85,26 @@
 
 
             let curr = 1;
-
+            let photo = 3;
 
         $('.next').on('click', function(){
 
+            if(curr<3){
+                $('.container-slide').css('transform', 'translateX(-'+curr+'00vw)');
+                curr+=1;
+            }
             
-            $('.container-slide').css('transform', 'translateX(-'+curr+'00vw)');
-            curr+=1;
 
         })
         
+        $('.prev').on('click', function(){
 
+            if(curr>1){
+                $('.container-slide').css('transform', 'translateX(-'+(curr-2)+'00vw)');
+                curr-=1;
+            }
 
-        // $('.prev').on('click', function(){
-            
-            
-        //     $('.container-slide').css('transform', 'translateX(+'+curr+'00vw)');
-        //     curr-=1;
-        //     3번에 있으면 2번으로
-        //     2번에 있으면 1번으로
-            
-
-        // })
-
-
-        // $('.next').on('click', function(){
-
-        //     curr+=1;
-        //     if(curr == 1){
-        //         $('.box').css('transform', 'translateX(0vw)');
-        //     } else if(curr ==2){
-        //         $('.box').css('transform', 'translateX(-100vw)');
-        //     } else if(curr ==3){
-        //         $('.box').css('transform', 'translateX(-200vw)');
-        //     } 
-
-        // })
-
-        // $('.prev').on('click', function(){
-
-        //     curr-=1;
-        //     if(curr == 3){
-        //         $('.box').css('transform', 'translateX(-200vw)');
-        //     } else if(curr ==2){
-        //         $('.box').css('transform', 'translateX(-100vw)');
-        //     } else if(curr ==1){
-        //         $('.box').css('transform', 'translateX(0vw)');
-        //     } 
-
-        // })
+        })
 
              
 
