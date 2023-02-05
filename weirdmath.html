@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+
+    <title>Weird math</title>
+</head>
+<body>
+
+    <script>
+
+        function math(num){
+
+            if(num<=100 && num%8 == 0 && num%12 != false){
+                console.log('ok')
+            } else if(num>100 || num%12 == 0){
+                console.log('no')
+            }
+
+        }
+
+        document.qu
+
+        // 8의 배수이지만 12의 배수는 아니어야 한다
+
+        math(8); // ok
+        math(16); // ok
+        math(24); // no
+        math(80); // no
+        math(128); // no
+
+
+    </script>
+    
+</body>
+</html>
