@@ -15,6 +15,7 @@
 </head>
 <body>
 
+
     <div class="black-bg">
 
         <div class="main-bg">
@@ -39,17 +40,23 @@
         </div>
     </div>
 
-
-
     <script>
 
 
         $('.btn-show').on('click', function(){
-            $('.white-bg').fadeIn('show');
+            $('.white-bg').addClass('show');
         })
 
         $('#close').on('click', function(){
-            $('.white-bg').fadeOut('show');
+            $('.white-bg').removeClass('show');
+        })
+
+        // $('.black-bg').on('click', function(){
+        //     $('.white-bg').removeClass('show');
+        // })
+
+        document.querySelector('.black-bg').addEventListener('click', function(){
+            document.querySelector('.black-bg').classList.remove('show');
         })
 
         $('form').on('submit', function(e){
@@ -98,6 +105,9 @@
         // /a+/ => a가 반복되는 것을 찾기 ex) aaa
 
         // /\S+t/ => 아무 문자 여러개 다음 t ex) ddddt, eeet, aat
+
+
+        
 
 
         
