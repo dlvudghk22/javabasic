@@ -16,13 +16,14 @@
 <body>
 
 
+    
+
+    <div class="main-bg">
+        <h4>Shirts on sale</h4>
+        <button id="login" class="btn-show btn-danger">login</button>
+    </div>
+
     <div class="black-bg">
-
-        <div class="main-bg">
-            <h4>Shirts on sale</h4>
-            <button id="login" class="btn-show btn-danger">login</button>
-        </div>
-
         <div class="white-bg">
           <h4>로그인하세요</h4>
 
@@ -44,20 +45,20 @@
 
 
         $('.btn-show').on('click', function(){
-            $('.white-bg').addClass('show');
+            $('.black-bg').addClass('show');
         })
 
         $('#close').on('click', function(){
-            $('.white-bg').removeClass('show');
+            $('.black-bg').removeClass('show');
         })
 
-        // $('.black-bg').on('click', function(){
-        //     $('.white-bg').removeClass('show');
+        $('.black-bg').on('click', function(){
+            $('.black-bg').removeClass('show');
+        })
+
+        // document.querySelector('.black-bg').addEventListener('click', function(){
+        //     document.querySelector('.black-bg').classList.remove('show');
         // })
-
-        document.querySelector('.black-bg').addEventListener('click', function(){
-            document.querySelector('.black-bg').classList.remove('show');
-        })
 
         $('form').on('submit', function(e){
             
