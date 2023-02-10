@@ -18,10 +18,7 @@
 
     
 
-    <div class="main-bg">
-        <h4>Shirts on sale</h4>
-        <button id="login" class="btn-show btn-danger">login</button>
-    </div>
+    
 
     <div class="black-bg">
         <div class="white-bg">
@@ -41,6 +38,12 @@
         </div>
     </div>
 
+    <div class="main-bg">
+            <h4>Shirts on sale</h4>
+            <button id="login" class="btn-show btn-danger">login</button>
+    </div>
+
+
     <script>
 
 
@@ -52,9 +55,24 @@
             $('.black-bg').removeClass('show');
         })
 
-        $('.black-bg').on('click', function(){
-            $('.black-bg').removeClass('show');
+        $('.black-bg').on('click', function(e){
+
+            if(e.target == document.querySelector('.black-bg')){
+                $('.black-bg').removeClass('show');
+            }
+
+            
+
+            console.log(e.target);
+            console.log(document.querySelector('.black-bg'));
+            console.log($(e.target));
+            console.log($('.black-bg'));
+            
         })
+
+        
+
+        
 
         // document.querySelector('.black-bg').addEventListener('click', function(){
         //     document.querySelector('.black-bg').classList.remove('show');
@@ -67,7 +85,7 @@
 
             if(email == '' || (/\S+@\S+\.\S+/).test(email) == false){
                 e.preventDefault();
-                alert('write your id');
+                alert('write your email');
             } else if(pw == ''){
                 e.preventDefault();
                 alert('write your pw');
@@ -106,6 +124,8 @@
         // /a+/ => a가 반복되는 것을 찾기 ex) aaa
 
         // /\S+t/ => 아무 문자 여러개 다음 t ex) ddddt, eeet, aat
+
+        // \. => 마침표 넣고 싶을 때, 점만 넣으면 x (마침표 자체가 문법)
 
 
         
