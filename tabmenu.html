@@ -56,11 +56,11 @@
       
       <div class="container mt-5">
         <ul class="list">
-          <li class="tab-button">Products</li>
-          <li class="tab-button">Information</li>
-          <li class="tab-button">Shipping</li>
-          <li class="tab-button">Plus</li>
-          <li class="tab-button">Plus2</li>
+          <li class="tab-button" data-id="0">Products</li>
+          <li class="tab-button" data-id="1">Information</li>
+          <li class="tab-button" data-id="2">Shipping</li>
+          <!-- <li class="tab-button">Plus</li>
+          <li class="tab-button">Plus2</li> -->
         </ul>
         <div class="tab-content">
           <p>상품설명입니다. Product</p>
@@ -71,15 +71,60 @@
         <div class="tab-content">
           <p>배송정보입니다. Shipping</p>
         </div>
-        <div class="tab-content">
+        <!-- <div class="tab-content">
           <p>추가메뉴입니다. Plus</p>
         </div>
         <div class="tab-content">
           <p>추가메뉴2입니다. Plus2</p>
-        </div>
+        </div> -->
       </div>
 
-      <script src="tabmenu.js"></script>
+      <script>
+
+
+          // let num = $('.tab-content').length;
+
+
+          // for (let i=0; i<num; i++){
+            
+          //     $('.tab-button').eq(i).on('click', function(){
+
+          //         open(i);
+
+          //     })
+              
+          // }
+
+
+          
+          $('.list').click(function(e){
+
+              // if(e.target == document.querySelectorAll('.tab-button')[0]){
+              //   open(0);
+              // } else if(e.target == document.querySelectorAll('.tab-button')[1]){
+              //   open(1);
+              // } else if(e.target == document.querySelectorAll('.tab-button')[2]){
+              //   open(2);
+              // }
+
+              console.log(e.target.dataset.id);
+
+              open(e.target.dataset.id);
+
+
+          })
+
+
+          function open(a){
+              $('.tab-button').removeClass('orange');
+              $('.tab-button').eq(a).addClass('orange');
+              $('.tab-content').removeClass('show');
+              $('.tab-content').eq(a).addClass('show');
+          }
+
+
+
+      </script>
     
 </body>
 </html>
